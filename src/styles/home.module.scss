@@ -1,0 +1,9 @@
+$primary-color: #cd1818;
+
+:export {
+  primaryColor: $primary-color;
+}
+
+.headerText {
+  color: $primary-color;
+}
