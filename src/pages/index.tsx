@@ -39,7 +39,8 @@ const getAllPosts: React.FC<GetAllPostsProps> = ({ posts }) => {
     );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
+    // export async function getStaticProps() {
     try {
         const res = await prisma.post.findMany();
         const posts = res.map((post) => {
@@ -53,7 +54,7 @@ export async function getStaticProps() {
 
         return {
             props: { posts },
-            revalidate: 10,
+            // revalidate: 10,
         };
     } catch (error) {
         console.log(error);
