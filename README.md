@@ -1,5 +1,1 @@
-
-
-
-
-# https://github.com/Taofiqq/nextjs-prisma
+fullstack text editor with uploading image functionality using typescript nextjs for the frontend and the backend
